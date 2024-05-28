@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-black">
+        <div
+          class="bg-black max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="/src/screen/home.html">
+            <img
+              src="/assets/icon/bitcoin-logo-DDAEEA68FA-seeklogo.com.png"
+              class="h-10"
+              alt="Flowbite Logo"
+            />
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-2 rtl:space-x-reverse"
+          >
+            <button class="button3" id="loginButton">Login</button>
+            <button class="button2" id="signUpButton">Sign Up</button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="ml-3 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="/src/screen/home.html"
+                  class="nav-link block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/screen/wallets.html"
+                  class="nav-link block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Wallets</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Guides</a
+                >
+              </li>
+              <li class="relative">
+                <button
+                  id="cryptoDropdownButton"
+                  data-dropdown-toggle="cryptoDropdown"
+                  class="nav-link block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Crypto Currencies
+                  <i class="fa-solid fa-angle-down text-amber-400"></i>
+                </button>
+                <div
+                  id="cryptoDropdown"
+                  class="hidden absolute mt-2 w-64 bg-amber-400 border border-gray-100 dark:border-gray-700 rounded-lg shadow-md"
+                >
+                  <ul class="py-1">
+                    <li>
+                      <a
+                        href="/src/screen/inovation.html"
+                        class="block px-4 py-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >Inovation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >New Listings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >Gainers and Losers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >Coin Comparison</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="relative">
+                <button
+                  id="exchangeDropdownButton"
+                  data-dropdown-toggle="exchangeDropdown"
+                  class="nav-link block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Exchange
+                  <i class="fa-solid fa-angle-down text-amber-400"></i>
+                </button>
+                <div
+                  id="exchangeDropdown"
+                  class="hidden absolute mt-2 w-64 bg-amber-400 border border-gray-100 dark:border-gray-700 rounded-lg shadow-md"
+                >
+                  <ul class="py-1">
+                    <li>
+                      <a
+                        href="/src/screen/inovation.html"
+                        class="block px-4 py-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >Individual</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >Business</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >Developer</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >How is works</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="/src/screen/about.html"
+                  class="nav-link block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="h-[350px] flex flex-col items-center justify-center mt-10">
+      <h2
+        class="text-6xl font-bold mb-8 text-white flex items-center justify-center"
+      >
+        Innovation in Payment Systems
+      </h2>
+      <p class="mb-8 text-white flex text-center items-center justify-center">
+        Bitcoin isn't just about sending money. <br />It has many features and
+        opens many possibilities that the community is still exploring. <br />
+        Here are some of the technologies currently being researched, and in
+        some cases,<br />
+        being turned into real products and services. The most interesting uses
+        of Bitcoin are probably still to be discovered.
+      </p>
+    </section>
+    <section class="h-auto flex flex-col items-center justify-center mt-20">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-20"
+      >
+        <div class="cardss">
+          <div class="cardsss red">
+            <p class="tip">Hover Me</p>
+            <p class="second-text">Lorem Ipsum</p>
+          </div>
+          <div class="cardsss blue">
+            <p class="tip">Hover Me</p>
+            <p class="second-text">Lorem Ipsum</p>
+          </div>
+          <div class="cardsss green">
+            <p class="tip">Hover Me</p>
+            <p class="second-text">Lorem Ipsum</p>
+          </div>
+          <div class="cardsss green">
+            <p class="tip">Hover Me</p>
+            <p class="second-text">Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/src/js/script.js"></script>
+  </body>
+</html>
