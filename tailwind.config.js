@@ -2,9 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "FEC106",
+        secondary: "#1C2028",
+        third: "4D47C3",
+      },
+    },
     screens: {
-      sm: "640px", // Adjust the breakpoint value if needed
+      sm: "640px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
