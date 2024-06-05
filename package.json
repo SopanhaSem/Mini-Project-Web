@@ -7,8 +7,10 @@
   },
   "name": "mini-project",
   "version": "1.0.0",
-  "main": "tailwind.config.js",
-  "scripts": {},
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
