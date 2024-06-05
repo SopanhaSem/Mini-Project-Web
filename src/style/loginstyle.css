@@ -73,12 +73,12 @@ body {
 .sign {
   display: block;
   width: 100%;
-  background-color: rgba(167, 139, 250, 1);
+  background-color: #fec106;
   padding: 0.75rem;
   text-align: center;
   color: rgba(17, 24, 39, 1);
   border: none;
-  border-radius: 0.375rem;
+  border-radius: 20px;
   font-weight: 600;
 }
 
